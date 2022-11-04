@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.413dfe04.css",
-    "main.js": "/static/js/main.d924f922.js",
-    "static/media/main.png": "/static/media/main.f47d7bc461c73cb78de2.png",
-    "static/media/contact.jpg": "/static/media/contact.cd46d47d303cfc501f12.jpg",
-    "static/media/work.jpg": "/static/media/work.f97604ba039fbe379626.jpg",
-    "static/media/about.jpg": "/static/media/about.35c809c83be1cc369048.jpg",
-    "static/media/up-arrow-circle.svg": "/static/media/up-arrow-circle.52ea3d809d1893ff897e018deec6d8f4.svg",
-    "index.html": "/index.html",
-    "main.413dfe04.css.map": "/static/css/main.413dfe04.css.map",
-    "main.d924f922.js.map": "/static/js/main.d924f922.js.map"
+    "main.css": "/alexey.katulsky.github.io/static/css/main.1fad5934.css",
+    "main.js": "/alexey.katulsky.github.io/static/js/main.211fb1fb.js",
+    "static/media/main.png": "/alexey.katulsky.github.io/static/media/main.f47d7bc461c73cb78de2.png",
+    "static/media/contact.jpg": "/alexey.katulsky.github.io/static/media/contact.cd46d47d303cfc501f12.jpg",
+    "static/media/work.jpg": "/alexey.katulsky.github.io/static/media/work.f97604ba039fbe379626.jpg",
+    "static/media/about.jpg": "/alexey.katulsky.github.io/static/media/about.35c809c83be1cc369048.jpg",
+    "static/media/up-arrow-circle.svg": "/alexey.katulsky.github.io/static/media/up-arrow-circle.52ea3d809d1893ff897e018deec6d8f4.svg",
+    "index.html": "/alexey.katulsky.github.io/index.html",
+    "main.1fad5934.css.map": "/alexey.katulsky.github.io/static/css/main.1fad5934.css.map",
+    "main.211fb1fb.js.map": "/alexey.katulsky.github.io/static/js/main.211fb1fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.413dfe04.css",
-    "static/js/main.d924f922.js"
+    "static/css/main.1fad5934.css",
+    "static/js/main.211fb1fb.js"
   ]
 }
