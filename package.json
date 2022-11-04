@@ -2,7 +2,7 @@
   "name": "alexeykatulsky.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alexey.katulsky.github.io",
+  "homepage": "https://alexey-katulsky.github.io/portfolio.github.io/",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "gh-pages": "^4.0.0",
