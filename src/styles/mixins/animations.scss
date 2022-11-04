@@ -1,0 +1,12 @@
+@mixin background-animation($from,$to,$duration,$iteration) {
+    $name: background-#{unique-id()};
+
+    @keyframes #{$name} {
+        from {background-color: $from;}
+        to {background-color: $to;}
+    }
+
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-direction: $iteration;
+}
