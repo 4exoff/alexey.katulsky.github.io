@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/alexey.katulsky.github.io/static/css/main.1fad5934.css",
+    "main.css": "/alexey.katulsky.github.io/static/css/main.a42d60ec.css",
     "main.js": "/alexey.katulsky.github.io/static/js/main.211fb1fb.js",
     "static/media/main.png": "/alexey.katulsky.github.io/static/media/main.f47d7bc461c73cb78de2.png",
     "static/media/contact.jpg": "/alexey.katulsky.github.io/static/media/contact.cd46d47d303cfc501f12.jpg",
@@ -8,11 +8,11 @@
     "static/media/about.jpg": "/alexey.katulsky.github.io/static/media/about.35c809c83be1cc369048.jpg",
     "static/media/up-arrow-circle.svg": "/alexey.katulsky.github.io/static/media/up-arrow-circle.52ea3d809d1893ff897e018deec6d8f4.svg",
     "index.html": "/alexey.katulsky.github.io/index.html",
-    "main.1fad5934.css.map": "/alexey.katulsky.github.io/static/css/main.1fad5934.css.map",
+    "main.a42d60ec.css.map": "/alexey.katulsky.github.io/static/css/main.a42d60ec.css.map",
     "main.211fb1fb.js.map": "/alexey.katulsky.github.io/static/js/main.211fb1fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fad5934.css",
+    "static/css/main.a42d60ec.css",
     "static/js/main.211fb1fb.js"
   ]
 }
