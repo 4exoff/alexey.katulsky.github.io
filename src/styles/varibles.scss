@@ -1,5 +1,7 @@
 $black: #000000;
 $white: #ffffff;
+$low-white:rgba($color: #fffffff3, $alpha: .9);
+$blur:rgba($color: #88888809, $alpha: .4);
 //$gray-gradient:linear-gradient(180deg, rgba(202,208,219,0.5802696078431373) 0%, rgba(0,0,0,1) 85%)
 $gray-gradient:linear-gradient(180deg, rgba(198,199,199,1) 16%, rgba(18,18,18,1) 73%);
 $dark-gray:linear-gradient(180deg, rgba(198,199,199,1) 0%, rgba(18,18,18,1) 0%);

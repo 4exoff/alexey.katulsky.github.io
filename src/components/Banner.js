@@ -16,7 +16,7 @@ const Banner = () => {
             </Fade>
             <Slide triggerOnce delay={1500} direction="left">
               <div className="line">
-                <span>Front-End Developer</span>
+                <span>Front-End React Developer</span>
               </div>
             </Slide>
           </h2>
