@@ -27,7 +27,7 @@ export const companies = [
       },
       {
         id: 3,
-        link: "https://www.help.wialon.com",
+        link: "https://help.wialon.com/help/en",
         name: "Help Center",
       },
       {
