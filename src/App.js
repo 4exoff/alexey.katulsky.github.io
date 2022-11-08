@@ -53,7 +53,6 @@ function App() {
   return (
     <>
       <Header dimensions={dimensions} />
-      {/* <div className="App"> */}
       <Routes>
         {routes.map(({ path, Component }) => (
           <Route
@@ -63,7 +62,6 @@ function App() {
           />
         ))}
       </Routes>
-      {/* </div> */}
       <Navigation dimensions={dimensions} />
     </>
   );
