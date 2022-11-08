@@ -1,0 +1,21 @@
+@import "../varibles.scss";
+@import "../breakpoints.scss";
+
+.about {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 50px;
+  overflow: hidden;
+  color: $low-white;
+  margin: 40px 0;
+
+  @include media("<=tablet") {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  h3 {
+    line-height: 2rem;
+    margin: 0;
+  }
+}

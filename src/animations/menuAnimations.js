@@ -3,11 +3,11 @@ import gsap from "gsap";
 let tl = gsap.timeline();
 
 export const openMenu = (width) => {
-  tl.to("nav", 0, {
+  tl.to(".mobile-nav", 0, {
     css: { display: "block" },
   })
     .to("body", 0, { css: { overflow: "hidden" } })
-    .to(".App", 1, {
+    .to("main", 1, {
       y: width <= 654 ? "100vh" : window.innerHeight,
       ease: "expo.inOut",
     })
@@ -45,14 +45,14 @@ export const openMenu = (width) => {
       },
       ease: "expo.inOut",
     })
-    .to(".hamburger-menu-close", 0.6, {
+    .to(".hamburger-menu__close", 0.6, {
       delay: -0.8,
       css: { display: "block" },
     });
 };
 
 export const closeMenu = () => {
-  tl.to(".App", 2, {
+  tl.to("main", 1, {
     y: 0,
     ease: "expo.inOut",
   })
@@ -90,12 +90,12 @@ export const closeMenu = () => {
       transformOrigin: "50% 0%",
       ease: "expo.inOut",
     })
-    .to(".hamburger-menu-close", 0, {
+    .to(".hamburger-menu__close", 0, {
       delay: -0.1,
       css: { display: "none" },
     })
     .to("body", 0, { css: { overflow: "auto" } })
-    .to("nav", 0, {
+    .to(".mobile-nav", 0, {
       css: { display: "none" },
     });
 };

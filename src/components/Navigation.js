@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { openMenu, closeMenu } from "../animations/menuAnimations";
+import { links } from "../data/navLinks";
+import "../styles/components/navigation.scss";
 
 const Navigation = ({ dimensions }) => {
   const [menuState, setMenuState] = useState({ menuOpened: false });
@@ -13,37 +15,22 @@ const Navigation = ({ dimensions }) => {
   }, [menuState]);
 
   return (
-    <nav>
+    <nav className="mobile-nav">
       <div className="container">
-        <div className="nav-columns">
-          <div className="nav-column">
-            <ul className="nav-links">
-              <li>
-                <NavLink
-                  to="/work"
-                  onClick={() => setMenuState({ menuOpened: false })}
-                >
-                  Work
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/about"
-                  onClick={() => setMenuState({ menuOpened: false })}
-                >
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contacts"
-                  onClick={() => setMenuState({ menuOpened: false })}
-                >
-                  Contacts
-                </NavLink>
-              </li>
-            </ul>
-          </div>
+        <div className="mobile-nav__columns">
+          <ul className="mobile-nav__links">
+            {links &&
+              links.map(({ id, link, title }) => (
+                <li key={id + "-mobile"}>
+                  <NavLink
+                    to={link}
+                    onClick={() => setMenuState({ menuOpened: false })}
+                  >
+                    {title}
+                  </NavLink>
+                </li>
+              ))}
+          </ul>
         </div>
       </div>
     </nav>

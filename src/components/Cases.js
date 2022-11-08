@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../styles/components/cases.scss";
 
 const caseStudies = [
   {
@@ -12,7 +13,7 @@ const caseStudies = [
   {
     id: 2,
     subtitle: "About",
-    title: "Biography",
+    title: "About",
     img: "about",
     link: "about",
   },
@@ -28,23 +29,20 @@ const caseStudies = [
 const Cases = () => {
   return (
     <section className="cases">
-      <div className="container-fluid">
+      <div className="cases__container">
         <div className="row">
-          {caseStudies.map((caseItem) => (
-            <NavLink to={caseItem.link} key={caseItem.id}>
-              <div className="case">
-                <div className="case-details">
-                  <span>{caseItem.subtitle}</span>
-                  <h2>{caseItem.title}</h2>
+          {caseStudies.map(({ link, id, subtitle, title, img }) => (
+            <NavLink to={link} key={id + "-" + link}>
+              <article className="case">
+                <div className="case__details">
+                  <span>{subtitle}</span>
+                  <h2>{title}</h2>
                 </div>
 
-                <div className="case-image">
-                  <img
-                    src={require(`../assets/${caseItem.img}.jpg`)}
-                    alt={caseItem.title}
-                  />
+                <div className="case__image">
+                  <img src={require(`../assets/${img}.jpg`)} alt={title} />
                 </div>
-              </div>
+              </article>
             </NavLink>
           ))}
         </div>

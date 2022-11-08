@@ -1,32 +1,35 @@
-footer{
-    height: 10vh;
-    height: calc(var(--vh, 1vh) * 10);
-    background: $dark-gray;
+@import "../varibles.scss";
+@import "../breakpoints.scss";
+
+footer {
+  height: 10vh;
+  height: calc(var(--vh, 1vh) * 10);
+  background: $dark-gray;
+  color: $white;
+
+  .column {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    @include media("<=tablet") {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  address {
+    font-style: initial;
+  }
+
+  a {
     color: $white;
+  }
 
-    .column{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-
-        @include media("<=tablet") {
-            flex-direction: column;
-            justify-content: center;
-        }
-    }
-
-    address{
-        font-style: initial;
-    }
-
-    a{
-        color: $white;
-    }
-
-    span{
-        font-size: 0.8rem;
-        line-height: 1.2rem;
-        font-weight: 500;
-    }
+  span {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+  }
 }

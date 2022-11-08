@@ -1,0 +1,99 @@
+@import "../varibles.scss";
+@import "../breakpoints.scss";
+
+.company {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 50px;
+  overflow: hidden;
+  color: $black;
+  margin: 40px 0;
+
+  @include media("<=tablet") {
+    grid-template-columns: 1fr;
+  }
+
+  &__logo-section {
+    background: $white;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 70%;
+  }
+
+  &__name-company {
+    color: $low-white;
+    display: block;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 800;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__position {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+
+  &__responsibilities {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+
+  &__projects {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+
+    a {
+      font-weight: 600;
+    }
+  }
+
+  &__stack {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    color: $low-white;
+    font-weight: 600;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border: 1px solid $low-white;
+      border-radius: 5px;
+      background: $blur;
+    }
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  label {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    color: $low-white;
+  }
+}

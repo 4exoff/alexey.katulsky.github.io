@@ -1,17 +1,16 @@
 @import "../mixins/animations.scss";
-$gray00:rgba(198,199,199,.0);
-$gray07:rgba(198,199,199,.7);
+@import "../varibles.scss";
+@import "../breakpoints.scss";
 
-
-.header {
+.nav {
   background: $gray07;
-  @include background-animation($gray00,$gray07,5s,normal);
+  @include background-animation($gray00, $gray07, 5s, normal);
   position: fixed;
   width: 100%;
   height: 74px;
   z-index: 4;
 
-  .logo {
+  &__logo {
     a {
       font-size: 1.2rem;
       letter-spacing: 0.5rem;
@@ -21,9 +20,9 @@ $gray07:rgba(198,199,199,.7);
     }
   }
 
-  .nav-links {
-    display:flex;
-    gap:20px;
+  &__links {
+    display: flex;
+    gap: 20px;
     padding: 0;
     margin: 0;
 
@@ -40,15 +39,13 @@ $gray07:rgba(198,199,199,.7);
       }
 
       a.active,
-      a:hover{
+      a:hover {
         font-weight: 600;
       }
-
     }
   }
 
-  .nav-toggle {
-
+  &__toggle {
     cursor: pointer;
     position: relative;
     display: none;
@@ -68,6 +65,21 @@ $gray07:rgba(198,199,199,.7);
     .hamburger-menu {
       width: 25px;
 
+      &__close {
+        position: absolute;
+        display: none;
+
+        svg {
+          @include media("<=tablet") {
+            width: 56px;
+          }
+
+          @include media("<=phone") {
+            width: 48px;
+          }
+        }
+      }
+
       span {
         text-align: center;
         margin-bottom: 0.3rem;
@@ -77,23 +89,5 @@ $gray07:rgba(198,199,199,.7);
         display: block;
       }
     }
-
-    .hamburger-menu-close {
-      position: absolute;
-      display: none;
-
-      svg {
-        @include media("<=tablet") {
-          width: 56px;
-        }
-
-        @include media("<=phone") {
-          width: 48px;
-        }
-      }
-    }
   }
 }
-
-
-

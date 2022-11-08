@@ -2,6 +2,7 @@ import React from "react";
 import Socials from "../components/Socials";
 import Footer from "../components/Footer";
 import { Fade } from "react-awesome-reveal";
+import { socials } from "../data/socials";
 
 const Contacts = () => {
   return (
@@ -11,7 +12,7 @@ const Contacts = () => {
           <div className="row">
             <Fade triggerOnce>
               <h1>Contact me</h1>
-              <Socials />
+              <Socials socials={socials} />
             </Fade>
           </div>
         </div>

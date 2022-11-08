@@ -1,4 +1,7 @@
-nav {
+@import "../varibles.scss";
+@import "../breakpoints.scss";
+
+.mobile-nav {
   left: 0;
   top: 0;
   width: 100%;
@@ -8,8 +11,8 @@ nav {
   position: fixed;
   overflow: hidden;
   background: $gray-gradient;
-  
-  .nav-columns {
+
+  &__columns {
     display: flex;
     height: 100%;
     align-items: center;
@@ -23,36 +26,34 @@ nav {
         padding: 0 16px;
       }
     }
-    .nav-column {
+  }
 
-      .nav-links {
-        display:flex ;
-        gap:20px;
-        padding: 0;
-        margin: 0;
+  &__links {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 
-        @include media("<=phone") {
-          display: block;
-        }
+    @include media("<=phone") {
+      display: block;
+    }
 
-        li {
-          list-style: none;
-          margin-bottom: 2.4rem;
+    li {
+      list-style: none;
+      margin-bottom: 2.4rem;
 
-          @include media("<=phone") {
-            margin-bottom: 1.6rem;
-          }
+      @include media("<=phone") {
+        margin-bottom: 1.6rem;
+      }
 
-          a {
-            font-weight: 600;
-            font-size: 2.8rem;
-            text-decoration: none;
-            color: $black;
-            
-            @include media("<=tablet") {
-              font-size: 2rem;
-            }
-          }
+      a {
+        font-weight: 600;
+        font-size: 2.8rem;
+        text-decoration: none;
+        color: $black;
+
+        @include media("<=tablet") {
+          font-size: 2rem;
         }
       }
     }

@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
 @import "./varibles.scss";
 @import "./breakpoints.scss";
-@import "./components/header.scss";
-@import "./components/banner.scss";
-@import "./components/cases.scss";
-@import "./components/navigation.scss";
-@import "./components/socials.scss";
-@import "./components/footer.scss";
 
 body,
 html {
@@ -15,23 +9,27 @@ html {
   background: $white;
   overscroll-behavior: none;
   margin: 0;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-    "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-*a{
+*a {
   color: $black;
   outline: none;
   text-decoration: none;
 }
-a:active,a:visited,a:hover,a:focus{
-  color:$black;
+
+a:active,
+a:visited,
+a:hover,
+a:focus {
+  color: $black;
 }
 
-*ul{
+*ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -77,112 +75,19 @@ a:active,a:visited,a:hover,a:focus{
   }
 }
 
-.container-fluid {
-  width: 100%;
-  height: 100%;
-
-  .row {
-    display: flex;
-    height: 100%;
-  }
-}
-
-.intro-overlay {
-  .top {
-    height: 70vh;
-    height: calc(var(--vh, 1vh) * 70);
-    position: absolute;
-    width: 100%;
-    z-index: 8;
-
-    .overlay-top {
-      position: absolute;
-      height: 100%;
-      width: 33.333vw;
-      background: $black;
-      bottom: 0;
-      left: 0;
-      right: 0;
-
-      @include media("<=tablet") {
-        width: 100vw;
-      }
-
-      &:nth-child(2) {
-        left: 33.333%;
-
-        @include media("<=tablet") {
-          display: none;
-        }
-      }
-
-      &:nth-child(3) {
-        left: 66.666%;
-
-        @include media("<=tablet") {
-          display: none;
-        }
-      }
-    }
-  }
-
-  .bottom {
-    height: 30vh;
-    height: calc(var(--vh, 1vh) * 30);
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    z-index: 8;
-
-    .overlay-bottom {
-      position: absolute;
-      height: 100%;
-      width: 33.333vw;
-      background: $black;
-      bottom: 0;
-      right: 66.666%;
-
-      @include media("<=tablet") {
-        right: 0;
-        width: 100vw;
-      }
-
-      &:nth-child(2) {
-        right: 33.333%;
-
-        @include media("<=tablet") {
-          width: 100vw;
-          top: 100%;
-          right: 0;
-        }
-      }
-
-      &:nth-child(3) {
-        right: 0;
-
-        @include media("<=tablet") {
-          width: 100vw;
-          top: 200%;
-        }
-      }
-    }
-  }
-}
-
-.App {
+main {
   z-index: 2;
   transform: translateY(0);
   position: relative;
 }
 
 .page {
-   min-height: 90vh;
+  min-height: 90vh;
   background: $gray-gradient;
   display: flex;
   align-items: center;
-  
 
-  .container{
+  .container {
     padding-top: 74px;
 
     @include media("<=phone") {
@@ -196,7 +101,7 @@ a:active,a:visited,a:hover,a:focus{
     justify-content: center;
     flex-direction: column;
 
-    h1{
+    h1 {
       font-size: 3rem;
       line-height: 4.2rem;
       font-weight: 700;
@@ -216,30 +121,7 @@ a:active,a:visited,a:hover,a:focus{
   }
 }
 
-///about page style
-
-.about{
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 50px;
-  overflow: hidden;
-  color: $low-white;
-  margin: 40px 0;
-
-  @include media("<=tablet") {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  h3{
-    line-height: 2rem;
-    margin: 0;
-  }
-
-}
-
-
-.blur{
+.blur {
   background: $blur;
   border-radius: 10px;
   border: 2px solid $low-white;
@@ -248,111 +130,11 @@ a:active,a:visited,a:hover,a:focus{
   @include media("<=tablet") {
     padding: 20px;
   }
-  
 }
 
-.blur p{
+.blur p {
   font-size: 1.3rem;
   line-height: 2rem;
   margin: 0;
   color: $black;
-}
-
-
-.company{
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  gap: 50px;
-  overflow: hidden;
-  color: $black;
-  margin: 40px 0;
-
-  @include media("<=tablet") {
-    grid-template-columns: 1fr;
-  }
-
-  &__logo-section{
-    background: $white;
-    width: 150px;
-    height: 150px;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center
-  }
-
-  &__logo{
-     width: 70%;
-  }
-
-  &__name-company{
-    color: $low-white;
-    display: block;
-    font-size: 1.8rem;
-    line-height: 2rem;
-    font-weight: 800;
-  }
-
-  &__left,&__right{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  &__position{
-    font-size: 1.8rem;
-    line-height: 2rem;
-    font-weight: 600;
-  }
-
-  &__responsibilities{
-    font-size: 1.4rem;
-    line-height: 2rem;
-  }
-
-  &__projects{
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    
-
-    a{
-      font-weight: 600;
-    }
-  }
-
-  &__stack{
-    display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    color: $low-white;
-    font-weight: 600;
-
-    li{
-      display: flex;
-      align-items:center ;
-      justify-content: center;
-      padding: 10px;
-      border: 1px solid $low-white;
-      border-radius: 15px;
-      background: $blur;
-    }
-  }
-
-  section{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-  }
-
-  label{
-    font-size: 0.9rem;
-    line-height: 1.4rem;
-    color: $low-white;
-  }
-
 }

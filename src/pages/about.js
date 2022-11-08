@@ -1,7 +1,7 @@
 import React from "react";
 import Footer from "../components/Footer";
-
 import { Fade, Slide } from "react-awesome-reveal";
+import "../styles/pages/about.scss";
 
 const About = () => {
   return (
@@ -42,7 +42,7 @@ const About = () => {
                     opportunity to work with different development teams, all of
                     them were unique and interesting in their experience and
                     skills. As for the technology stack, like all front-end
-                    developers, I started my path with native JS, NTML5, Css3.
+                    developers, I started my path with native JS, HTML5, Css3.
                     Later I got acquainted with Jquery, it was a long
                     acquaintance for me, because years later I faced with
                     projects where I had to support it, optimize existing

@@ -1,29 +1,32 @@
+@import "../varibles.scss";
+@import "../breakpoints.scss";
+
 .socials {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-  
-    li {
-      margin: 0 15px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li {
+    margin: 0 15px;
+  }
+
+  a {
+    font-size: 3.4rem;
+    line-height: 4.2rem;
+    font-weight: 700;
+    color: $white;
+    mix-blend-mode: difference;
+
+    @include media("<=tablet") {
+      font-size: 2.4rem;
+      line-height: 3rem;
     }
 
-    a {
-        font-size: 3.4rem;
-        line-height: 4.2rem;
-        font-weight: 700;
-        color: $white;
-        mix-blend-mode: difference;
-
-        @include media("<=tablet") {
-            font-size: 2.4rem;
-            line-height: 3rem;
-        }
-
-        @include media("<=phone") {
-            margin-top: 72px;
-            font-size: 2rem;
-            line-height: 2.2rem;
-        }
+    @include media("<=phone") {
+      margin-top: 72px;
+      font-size: 2rem;
+      line-height: 2.2rem;
     }
   }
+}
