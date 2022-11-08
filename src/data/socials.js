@@ -12,7 +12,7 @@ export const socials = [
   {
     id: 3,
     icon: "github",
-    path: "https://github.com/4exoff",
+    path: "https://github.com/alexey-katulsky",
   },
   {
     id: 4,
