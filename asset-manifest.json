@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio.github.io/static/css/main.3e56b385.css",
-    "main.js": "/portfolio.github.io/static/js/main.0bb8dd01.js",
+    "main.css": "/portfolio.github.io/static/css/main.0eaf69ae.css",
+    "main.js": "/portfolio.github.io/static/js/main.8f66fb3a.js",
     "static/media/main.png": "/portfolio.github.io/static/media/main.f47d7bc461c73cb78de2.png",
     "static/media/contact.jpg": "/portfolio.github.io/static/media/contact.cd46d47d303cfc501f12.jpg",
     "static/media/work.jpg": "/portfolio.github.io/static/media/work.f97604ba039fbe379626.jpg",
@@ -9,11 +9,11 @@
     "static/media/efectura-logo.png": "/portfolio.github.io/static/media/efectura-logo.9d38ca5cd90711693a79.png",
     "index.html": "/portfolio.github.io/index.html",
     "static/media/up-arrow-circle.svg": "/portfolio.github.io/static/media/up-arrow-circle.52ea3d809d1893ff897e018deec6d8f4.svg",
-    "main.3e56b385.css.map": "/portfolio.github.io/static/css/main.3e56b385.css.map",
-    "main.0bb8dd01.js.map": "/portfolio.github.io/static/js/main.0bb8dd01.js.map"
+    "main.0eaf69ae.css.map": "/portfolio.github.io/static/css/main.0eaf69ae.css.map",
+    "main.8f66fb3a.js.map": "/portfolio.github.io/static/js/main.8f66fb3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.3e56b385.css",
-    "static/js/main.0bb8dd01.js"
+    "static/css/main.0eaf69ae.css",
+    "static/js/main.8f66fb3a.js"
   ]
 }
