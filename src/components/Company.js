@@ -40,21 +40,24 @@ const Company = (props) => {
                   </span>
                 </section>
                 <section>
-                  <label htmlFor={"date-" + id}>work date:</label>
+                  {/* <label htmlFor={"date-" + id}>work date:</label> */}
                   <span id={"date-" + id} className="company__work-date">
                     {date}
                   </span>
                 </section>
                 <section>
-                  <label htmlFor={"responsibilities-" + id}>
+                  {/* <label htmlFor={"responsibilities-" + id}>
                     responsibilities:
-                  </label>
-                  <p
+                  </label> */}
+                  <div
                     id={"responsibilities-" + id}
                     className="company__responsibilities"
                   >
-                    {responsibilities}
-                  </p>
+                    {responsibilities &&
+                      responsibilities.map((el, index) => (
+                        <p key={index}>{el}</p>
+                      ))}
+                  </div>
                 </section>
                 <section>
                   <label htmlFor={"projects-" + id}>projects:</label>

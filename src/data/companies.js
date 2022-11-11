@@ -7,13 +7,13 @@ export const companies = [
     },
     name: "Gurtam",
     position: "Front-End Web Developer",
-    date: "oct. 2019 - march 2022",
-    responsibilities: `Worked in a hybrid format (remotely and from the office).
-    Interacted with the team using the Scrum methodology.
-    Communicated with developers from other departments of the
-    company. Created new functionality and supported existing
-    projects. Refactored someone else's code. Fixed bugs.
-    Administrated in the confluence viewport theme.`,
+    date: "(2019 - 2022)",
+    responsibilities: [
+      `I participated in the creation of a completely new project Help Center, which became very important for the company, as it allowed to increase the number of potential customers for our products. I was involved in creating the project structure, writing code, optimizing web pages speed, and administering the Scroll Viewport for Confluence.`,
+      `I redesigned existing and created new web pages for Gurtam's main website Gurtam.com. I optimized existing code, fixed bugs, implemented partner map, took part in project restructuring.`,
+      `I supported the most important site for the company Flespi.com, where our Flespi product was promoted, the number of devices connected to the tracking system depended on this. I optimized the site speed, created new sections and web pages, fixed bugs and optimized the code.`,
+      `I redesigned the Wialon.ru project completely, which was intended for the CIS countries, where our Wialon product and its areas of application were promoted. I wrote new code, restructured the project, interacted with the designer, product manager from my department and employees from the documentation and marketing department.`,
+    ],
     projects: [
       {
         id: 1,
@@ -76,13 +76,15 @@ export const companies = [
     },
     name: "Efectura",
     position: "Front-End Developer",
-    date: "aug. 2017 - sep. 2019",
-    responsibilities: `The company was directed to outsourcing. The main customers
-    were from Turkey and a few CIS countries. Engaged in writing
-    new functionality and maintaining existing ones. Took part
-    in the designing, developing and maintaining of the modules.
-    Engaged in writing automated tests to check the performance
-    of a CRM system on selenium (C#).`,
+    date: "(2017 - 2019)",
+    responsibilities: [
+      `The company was directed to outsourcing. The main customers were from Turkey and a few CIS countries.`,
+      `For our MDM product, I implemented automated testing of the functionality of our CRM system. I wrote test cases using Selenium C#. I was involved in creating new functionality, designing modules, services and worked with the MySQL database.`,
+      `For our partner AlfaBank, I created web pages for Alfredomania, Alpha Galaxy, Summer events.`,
+      `For partners from Seramiksan, I created new web pages and sections with their products, set up their service for filling content from our CRM system and created product categories and sections.`,
+      `For partners from Lifecell, I wrote new services and refactored the current functionality.`,
+      ` I was also involved in a complete restructuring and reorganization of our Git repositories.`,
+    ],
     projects: [
       {
         id: 1,

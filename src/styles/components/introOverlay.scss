@@ -1,6 +1,29 @@
 @import "../varibles.scss";
 @import "../breakpoints.scss";
 
+.welcome {
+  z-index: 10;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $low-white;
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 600;
+
+  @include media("<=tablet") {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  span {
+    display: none;
+  }
+}
+
 .intro-overlay {
   .top {
     height: 70vh;

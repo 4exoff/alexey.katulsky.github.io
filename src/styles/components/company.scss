@@ -51,6 +51,9 @@
   &__responsibilities {
     font-size: 1.4rem;
     line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
   }
 
   &__projects {
