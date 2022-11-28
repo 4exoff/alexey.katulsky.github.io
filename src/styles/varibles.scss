@@ -6,6 +6,10 @@ $low-white: rgba(
 );
 $gray00: rgba(198, 199, 199, 0);
 $gray07: rgba(198, 199, 199, 0.7);
+$blur-gray: rgba(
+  $color: #88888809,
+  $alpha: 1,
+);
 
 $blur: rgba(
   $color: #88888809,

@@ -1,5 +1,5 @@
-@import "../varibles.scss";
-@import "../breakpoints.scss";
+@import '../varibles.scss';
+@import '../breakpoints.scss';
 
 footer {
   height: 10vh;
@@ -13,7 +13,7 @@ footer {
     align-items: center;
     justify-content: space-between;
 
-    @include media("<=tablet") {
+    @include media('<=tablet') {
       flex-direction: column;
       justify-content: center;
     }
@@ -24,6 +24,10 @@ footer {
   }
 
   a {
+    &:active,
+    &:hover {
+      color: $white;
+    }
     color: $white;
   }
 

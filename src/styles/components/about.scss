@@ -1,0 +1,46 @@
+@import '../varibles.scss';
+@import '../breakpoints.scss';
+
+.about {
+  position: relative;
+  width: 100%;
+  color: $low-white;
+  margin: 20px 0;
+
+  &__title {
+    background: $blur-gray;
+    color: $black;
+    border-radius: 10px;
+    border: 2px solid $low-white;
+    padding: 5px 10px;
+    position: absolute;
+    top: -20px;
+    left: 10px;
+  }
+
+  &__content {
+    border-top: 2px solid $low-white;
+    padding: 40px 20px;
+
+    @include media('<=tablet') {
+      padding: 20px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      line-height: 2rem;
+      margin: 0;
+    }
+  }
+  &__content-date {
+    display: block;
+    padding: 20px 0px;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  h4 {
+    line-height: 2rem;
+    margin: 0;
+  }
+}

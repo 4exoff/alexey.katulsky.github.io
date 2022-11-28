@@ -1,6 +1,6 @@
-@import "../mixins/animations.scss";
-@import "../varibles.scss";
-@import "../breakpoints.scss";
+@import '../mixins/animations.scss';
+@import '../varibles.scss';
+@import '../breakpoints.scss';
 
 .nav {
   background: $gray07;
@@ -26,7 +26,7 @@
     padding: 0;
     margin: 0;
 
-    @include media("<=tablet") {
+    @include media('<=tablet') {
       display: none;
     }
 
@@ -52,12 +52,12 @@
     justify-content: center;
     align-items: center;
 
-    @include media("<=tablet") {
+    @include media('<=tablet') {
       display: flex;
       margin-right: 24px;
     }
 
-    @include media("<=phone") {
+    @include media('<=phone') {
       width: 20px;
       margin-right: 16px;
     }
@@ -70,11 +70,11 @@
         display: none;
 
         svg {
-          @include media("<=tablet") {
+          @include media('<=tablet') {
             width: 56px;
           }
 
-          @include media("<=phone") {
+          @include media('<=phone') {
             width: 48px;
           }
         }
