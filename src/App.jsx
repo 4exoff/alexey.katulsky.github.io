@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 import { gsap } from 'gsap';
 import Header from './components/Header';
 import Navigation from './components/Navigation';
@@ -34,6 +34,8 @@ function App() {
     width: window.innerWidth,
   });
 
+  const { pathname } = useLocation();
+
   useEffect(() => {
     gsap.to('body', 0, { css: { visibility: 'visible' } });
     const debouncedHandleResize = debounce(function handleResize() {
@@ -49,6 +51,10 @@ function App() {
       window.removeEventListener('resize', debouncedHandleResize);
     };
   });
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>
